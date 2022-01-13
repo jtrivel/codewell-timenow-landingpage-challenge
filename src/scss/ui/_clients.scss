@@ -1,0 +1,66 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.clients {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  @include m.tablet {
+    gap: 2rem;
+  }
+  @include m.desktop {
+    flex-direction: row;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include m.tablet {
+      flex-direction: row;
+    }
+    @include m.desktop {
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+
+  &__heading {
+    color: v.$blue;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    @include m.tablet {
+      flex: 1;
+    }
+  }
+
+  &__users {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex: 1;
+    @include m.desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__user {
+    width: 5rem;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+  }
+
+  &__text {
+    @include m.tablet {
+      max-width: 85%;
+    }
+  }
+}

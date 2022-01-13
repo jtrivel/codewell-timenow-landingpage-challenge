@@ -1,0 +1,77 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$primaryFont;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 300;
+  @include m.tablet { 
+    font-size: 1.8rem;
+  }
+}
+
+.container {
+  max-width: 140rem;
+  width: 95%;
+  margin-inline: auto;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+.btn {
+  display: block;
+  background-color: v.$blue;
+  padding: 1.5rem 2rem;
+  border-radius: .5rem;
+  color: v.$white;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  transition: all 250ms ease;
+  z-index: 1;
+  text-align: center;
+  &:hover {
+    color: v.$blue;
+  }
+  &::before{
+    z-index: -1;
+    position: absolute;
+    border: 1px solid transparent;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: v.$white;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transition: all 250ms ease;
+  }
+  &:hover::before {
+    transform: scaleY(1);
+
+  }
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}

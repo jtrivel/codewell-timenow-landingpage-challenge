@@ -1,0 +1,119 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header {
+  padding: 2rem 0;
+  overflow: hidden;
+  @include m.tablet {
+    padding: 5rem 0;
+  }
+
+  &__hero {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 60rem;
+    @include m.tablet {
+      max-width: 102rem;
+      align-items: center;
+      flex-direction: row;
+    }
+    @include m.desktop {
+      max-width: 140rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include m.tablet {
+      flex: 1;
+    }
+  }
+
+  &__heading {
+    color: v.$blue;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 3.5rem;
+    font-weight: 700;
+    @include m.desktop {
+      font-size: 6rem;
+    }
+  }
+
+  &__subheading {
+    font-weight: 300;
+    font-size: 1.6rem;
+    @include m.tablet {
+      font-size: 1.8rem;
+    }
+    @include m.desktop {
+      max-width: 75%;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    @include m.tablet {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    background-color: v.$blue;
+    padding: 1.4rem 2rem;
+    border-radius: 0.5rem;
+    color: v.$white;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: v.$green;
+    font-weight: 700;
+
+    &-b {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: v.$green;
+        bottom: 0;
+        transform: scaleX(1);
+        transition: all 250ms ease;
+      }
+      &:hover::before {
+        transform: scaleX(0);
+      }
+    }
+  }
+
+  &__cta2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 90%;
+  }
+
+  &__bottom {
+    background-color: v.$cyan;
+    padding: 2rem;
+    @include m.tablet {
+      flex: 1;
+      padding: 20rem 4rem 10rem 4rem;
+      z-index: -1;
+      margin-top: -15rem;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codwell.cc | TimeNow</title>
+  <script src="https://kit.fontawesome.com/5e6c8487ab.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="src/styles/app.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__left">
+        <a href="_index.html" class="nav__logo"><img src="src/images/Logo.svg"class="nav__logo"></a>   
+        <a href="#" class="nav__link nav__link-t">Features</a>
+        <a href="#" class="nav__link nav__link-t">Pricing</a>
+      </div>
+      <div class="nav__right">
+        <input type="checkbox" id="check">
+        <label for="check" class="nav__icon"><i class="fas fa-bars"></i></label>
+        <div class="nav__menu">
+            <ul class="nav__bg">
+              <a href="#" class="nav__link nav__link-f">Features</a>
+              <a href="price.html" class="nav__link nav__link-f">Pricing</a>
+              <li><a href="#" class="btn mr-2">Start Scheduling</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+
+
+
+    <section class="plan container">
+        <plan class="plan__title">
+          <h1 class="plan__heading">Flexible plans for everyone</h1>
+          <h2 class="plan__subheading">Our plans are made for everyone.Whether you're just starting out on social media , or have been on there for a long time, we have a plan that's right for you</h2>
+        </plan>
+
+      <!-- TOOGLE BTN -->
+        <div class="plan__switch"> 
+            <input type="checkbox" id="switch">
+            <label for="switch" class="plan__label">
+              <span class="plan__ball"></span>
+            </label>
+            <p class="plan__month">Billed Monthly</p>
+            <p class="plan__monthly">Billed Yearly</p>
+        </div>
+        <!-- /TOOGLE BTN -->
+
+        <!-- PLAN CARDS GRID -->
+        <div class="plan__grid">
+          <!-- card box -->
+          <div class="plan__box">
+            <div class="plan__top">
+              <p class="plan__price">$4</p>
+              <p class="plan__description">Perfect plan if you're just starting out</p>
+            </div>
+            <div class="plan__center">
+              <p class="plan__benefits">LinkedIn Integration</p>
+              <p class="plan__benefits">Twitter Integration</p>
+              <p class="plan__benefits">Link Integration</p>
+            </div>
+            <div class="plan__bottom">
+              <a href="#" class="btn">Subscribe Now</a>
+            </div>
+          </div>
+          <!-- /card box -->
+
+          <!-- card box -->
+          <div class="plan__box">
+            <div class="plan__top">
+              <p class="plan__price">$12</p>
+              <p class="plan__description">Perfect plan if you're a heavy user of social media</p>
+            </div>
+            <div class="plan__center">
+              <p class="plan__benefits">LinkedIn Integration</p>
+              <p class="plan__benefits">Twitter Integration</p>
+              <p class="plan__benefits">Instagram Integration</p>
+              <p class="plan__benefits">Link Integration</p>
+            </div>
+            <div class="plan__bottom">
+              <a href="#" class="btn">Subscribe Now</a>
+            </div>
+          </div>
+          <!-- /card box -->
+
+          <!-- card box -->
+          <div class="plan__box">
+            <div class="plan__top">
+              <p class="plan__price">$7</p>
+              <p class="plan__description">Perfect plan if you're just starting out</p>
+            </div>
+            <div class="plan__center">
+              <p class="plan__benefits">LinkedIn Integration</p>
+              <p class="plan__benefits">Twitter Integration</p>
+            </div>
+            <div class="plan__bottom">
+              <a href="#" class="btn">Subscribe Now</a>
+            </div>
+          </div>
+          <!-- /card box -->
+          
+        </div>
+        <!-- /PLAN CARDS GRID -->
+
+
+
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <a href="_index.html" class="footer__logo">
+      <img src="src/images/Logo.svg">
+    </a>
+    <!-- FOOTER BOX -->
+    <div class="footer__box">
+      <div class="footer__left">
+        <ul class="footer__nav">
+          <li><p class="footer__heading">Product</p></li>
+          <li><a href="" class="footer__link">Homepage</a></li>
+          <li><a href="" class="footer__link">Pricing</a></li>
+          <li><a href="" class="footer__link">Features</a></li>
+        </ul>
+        <ul class="footer__nav">
+          <li><p class="footer__heading">Help</p></li>
+          <li><a href="" class="footer__link">Live Chat</a></li>
+          <li><a href="" class="footer__link">Send Email</a></li>
+          <li><a href="" class="footer__link">FAQ</a></li>
+          
+        </ul>
+        <ul class="footer__nav">
+          <li><p class="footer__heading">Company</p></li>
+          <li><a href="" class="footer__link">About</a></li>
+          <li><a href="" class="footer__link">Customers</a></li>
+          <li><a href="" class="footer__link">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <p class="footer__heading">Try TweetNow</p>
+        <div class="footer__cta">
+          <input type="email" class="footer__input" placeholder="Email Address">
+          <a href="#" class="footer__btn">Start Scheduling</a>
+        </div>
+      </div>
+    </div>
+    <!-- /FOOTER BOX -->
+    <div class="footer__attribution">
+      <p class="footer__copyright">Challenge by <a href="https://www.codewell.cc/challenges" class="footer__link">Codwell.cc</a> Coded by <a href="#" class="footer__link">Joaquin Trivel Mera</a></p>
+    </div>
+
+  </footer>
+</body>
+</html>

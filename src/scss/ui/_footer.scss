@@ -1,0 +1,114 @@
+@use '../base/variables' as v ;
+@use '../base/mixins' as m ;
+
+.footer {
+  padding-top: 5rem;
+  overflow: hidden;
+
+  &__logo {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4rem;
+    @include m.desktop { 
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__left {
+    width: 80%;
+    @include m.grid(2,4rem);
+    @include m.tablet { 
+      @include m.grid(3,2rem);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__heading {
+    font-weight: 700;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: v.$blue;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: v.$cyan;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 250ms ease;
+    }
+    &:hover::before{
+      transform: scaleX(1);
+    }
+  }
+
+  
+  &__cta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: .2rem;
+    border-radius: .5rem;
+    max-width: 35rem;
+  }
+  
+  &__input {
+    border-radius: .5rem;
+    border: none;
+    max-width: 50%;
+    padding: 1.5rem 1rem;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder{
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    max-width: 95%;
+    text-decoration: none;
+    color: v.$white;
+    background-color: v.$blue;
+    font-weight: 700;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+    flex:2;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  &__attribution {
+    margin-top: 4rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+}
+
