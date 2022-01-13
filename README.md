@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.codewell.cc/challenges/fiber-landing-page--608a7e639691700015db16d1)
+- Solution URL: [Solution URL](https://www.codewell.cc/challenges/timenow-landing-page--608d9a7d747bad001532bd70/solution/61dfa54c6da8ba3fac6b02e9)
 - Live Site URL: [Live Site URL](https://codwell-timenow-landing-page-challenge.netlify.app/)
 
 ### Built with
